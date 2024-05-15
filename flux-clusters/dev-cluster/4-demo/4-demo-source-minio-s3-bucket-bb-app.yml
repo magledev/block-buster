@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: Bucket
+metadata:
+  name: 4-demo-source-minio-s3-bucket-bb-app
+  namespace: flux-system
+spec:
+  bucketName: bb-app
+  endpoint: minio.home.owngrowntech.net
+  interval: 1m0s
+  provider: generic
+  secretRef:
+    name: minio-crds
