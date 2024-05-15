@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
-  name: 5-demo-helm-release-git-helm-bb-app
+  name: 5-demo-helm-release-githelm-bb-app
   namespace: flux-system
 spec:
   chart:
@@ -11,7 +11,7 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
-        name: 5-demo-source-git-helm-bb-app
+        name: 5-demo-source-githelm-bb-app
   interval: 10s
   targetNamespace: 5-demo
   values:
