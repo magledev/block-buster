@@ -22,7 +22,7 @@ spec:
         version: 7.5.0
     namespace:
       name: 5-demo
-    replicaCount: 2
+    replicaCount: 1
     service:
       nodePort: 30005
       type: NodePort
